@@ -5,11 +5,11 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p><img src="/public/protas.png"/><br/>{{ site.t[page.lang].description }}</p> 
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+    <!--<a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>-->
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -25,14 +25,23 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item" href="{{ site.author.linkedin }}">LinkedIn</a>
+    <a class="sidebar-nav-item" href="{{ site.author.github }}">GitHub</a>
+    <a class="sidebar-nav-item" href="{{ site.author.facebook }}">Facebook</a>
+    <a class="sidebar-nav-item" href="{{ site.author.twitter }}">Twitter</a>
+    <a class="sidebar-nav-item" href="{{ site.author.vk }}">VK</a>
+    
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">{{ site.t[page.lang].githubtxt }}</a>
+    <a class="sidebar-nav-item" href="{{ site.github.theme }}">{{ site.t[page.lang].themetxt }}</a>
+ <!--   <span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    <span style="-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); 
+-khtml-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); display: 
+inline-block;">©</span>
+    {{ site.time | date: '%Y' }}.{{ site.t[page.lang].copylefttxt }}
     </p>
   </div>
 </div>

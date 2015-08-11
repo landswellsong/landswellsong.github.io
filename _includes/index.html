@@ -1,0 +1,38 @@
+<div class="posts">
+ <!--TODO: add a "where" filter-->
+<!--  { % for post in ( paginator.posts | where:"lang", lang ) % }-->
+
+  <!--Ugly but works -->
+  {% for post in paginator.posts %}
+  {% if page.lang == post.lang %} 
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">{{ site.t[page.lang].oldertxt }}</a>
+  {% else %}
+    <span class="pagination-item older">{{ site.t[page.lang].oldertxt }}</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">{{ site.t[page.lang].newertxt }}</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">{{ site.t[page.lang].newertxt }}</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">{{ site.t[page.lang].newertxt }}</span>
+  {% endif %}
+</div>
