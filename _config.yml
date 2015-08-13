@@ -1,9 +1,9 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink: /:title/
 excerpt_separator: ""
 
 # Setup
@@ -14,7 +14,7 @@ t:
       tagline:          'blog by Oleksiy Protas'
       description:      'Pretty nerdy stuff is being written here. Bioinformatics, computational politics and 
 mathematical journalism — no one will leave without confusion!'
-      indexurl:         '/index.html'
+      indexurl:         '/'
       oldertxt:         '← Older'
       newertxt:         'Newer →'
       githubtxt:        'This site on GitHub'
@@ -24,7 +24,7 @@ mathematical journalism — no one will leave without confusion!'
       tagline:          'блоґ Олексія Протаса'
       description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний 
 журналізм — ніхто не лишиться незаплутаним!'
-      indexurl:         '/poczatok.html'
+      indexurl:         '/uk'
       oldertxt:         '← Старіші'
       newertxt:         'Новіші →'
       githubtxt:        'Цей сайт на GitHub'
@@ -40,6 +40,7 @@ author:
   github:         https://github.com/landswellsong
 
 paginate:         5
+paginate_path:    '/en/:num'
 
 # Custom vars
 version:          2.0.0
@@ -52,27 +53,18 @@ github:
 # Multiple languages (thanks to https://sylvain.durand.tf/making-jekyll-multilingual/)
 defaults:
   -
-    scope:
-      path: _posts/en
     values:
-      layout: default
-      lang: en
+      layout: 'default'
+      lang: 'uk'
   -
     scope:
-      path: _posts/uk
+      path: '_posts/en'
     values:
-      layout: default
-      lang: uk
+      lang: 'en'
   -
     scope:
-      #path: index.html
-      path: ""
+      path: 'en'
     values:
-      layout: default
-      lang: en
-  -
-    scope:
-      path: poczatok.html
-    values:
-      layout: default
-      lang: uk
+      lang: 'en'
+
+      
