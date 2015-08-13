@@ -5,15 +5,12 @@
   <!--Adapted from KleinFreund.github.io -->
     {% assign posts = site.posts | where: "lang", page.lang %}
 
-    <ul class="post-list  post-list--archive">
+    <ul class="post-list">
     {% for post in posts %}
-        <li class="current-post">
+        <li class="post-list">
             <a class="post-list__link" href="{{ post.url }}">
             
-            <!--TODO propagade upward-->
-            <time class="timestamp" datetime="{{ post.date | date: '%Y-%m-%d' }}">
-                {{ post.date | date: '%Y' }}
-            </time>
+            {% include date.html %}
     
             <span class="post-title">{{ post.title }}</span>
 

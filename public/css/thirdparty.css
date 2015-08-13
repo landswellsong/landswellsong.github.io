@@ -7,51 +7,33 @@
 .post-list {
     list-style: none;
     margin-left: 0;
+    padding-left: 0;
 
-    > li {
+    /*> li {
         border-bottom: 1px solid #703030;
 
-        .timestamp {
+    .timestamp {
             display: block;
         }
+    }*/
+}
 
-        &:first-child {
-            border-top: 1px solid #703030;
-        }
+li.post-list {
+    border-bottom: 1px solid #c0c0c0;
+}
 
-        > :last-child {
-            margin-bottom: 0;
-        }
-    }
+time {
+    display: block;
+    color: #c0c0c0;
+    font-size: 14px;
 }
 
 .post-list__link {
     display: block;
-    padding: $half-spacing-unit;
+    padding: 7px;
 }
 
 .post-title {
-    @include font-size(20px);
+    font-size: 18px;
     margin-right: 0.5rem;
-}
-
-
-
-/**
- * Post List (Archive)
- */
-.post-list--archive {
-
-    .current-post {
-
-        .tag {
-            background-color: #703030;
-        }
-
-        &,
-        a,
-        .timestamp {
-            color: #703030;
-        }
-    }
 }
