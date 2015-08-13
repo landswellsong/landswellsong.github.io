@@ -11,3 +11,24 @@ span.ccplaque {
     font-size: 12px;
     display: block;
 }
+
+label.language-toggle {
+  position: absolute;
+  top:  1rem;
+  right: 1rem;
+  display: block;
+  padding: .5rem .65rem;
+  color: #805050;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+span.language-toggle {
+    font-size: 12px;
+    display: block;
+}
+
+a.language-toggle {
+    color: #805050;
+}

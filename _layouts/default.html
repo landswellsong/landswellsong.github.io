@@ -16,11 +16,27 @@
       <div class="masthead">
         <div class="container">
           <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
           <h3 class="masthead-title">
             <a href="{{ site.t[page.lang].indexurl }}" title="Home">{{ site.title }}</a>
             <small>{{ site.t[page.lang].tagline }}</small>
           </h3>
+          <label class="language-toggle">
+            <span class="language-toggle">
+               <img src="/public/favicon.ico" align="left" style="margin-right: 5px"/> 
+               <!--TODO: probably support more than 1 translation. or not?-->
+               <!--TODO support tags for indexes -->
+               <a class="language-toggle" href="
+               {% assign invlang=site.t[page.lang].inverse %}
+               {% if page.type == "post" %}
+               {% assign posts=site.posts | where:"name", page.name | where:"lang", invlang | first %}
+               {{ posts.url }}
+               {% else %}
+               {{ site.t[invlang].indexurl }}
+               {% endif %}">               
+               {{ site.t[page.lang].languagetoggle }}
+               </a>
+            </span>
+          </label>
         </div>
       </div>
 
