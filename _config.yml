@@ -14,7 +14,7 @@ t:
       tagline:          'blog by Oleksiy Protas'
       description:      'Pretty nerdy stuff is being written here. Bioinformatics, computational politics and 
 mathematical journalism — no one will leave without confusion!'
-      indexurl:         '/'
+      indexurl:         '/en'
       githubtxt:        'This site on GitHub'
       themetxt:         'Jekyll theme'
       copylefttxt:      'All wrongs liberated.'
@@ -22,7 +22,7 @@ mathematical journalism — no one will leave without confusion!'
       tagline:          'блоґ Олексія Протаса'
       description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний 
 журналізм — ніхто не лишиться незаплутаним!'
-      indexurl:         '/uk'
+      indexurl:         '/'
       githubtxt:        'Цей сайт на GitHub'
       themetxt:         'Тема для Jekyll'
       copylefttxt:      'Усі ліва звільнено.'

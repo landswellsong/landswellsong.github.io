@@ -33,7 +33,7 @@ time {
     padding: 7px;
 }
 
-.post-title {
+h4.post-title {
     font-size: 18px;
     margin-right: 0.5rem;
 }

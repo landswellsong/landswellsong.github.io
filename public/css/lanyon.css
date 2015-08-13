@@ -38,6 +38,9 @@
 html,
 body {
   overflow-x: hidden;
+  background-image: url("/public/embrodiery.png");
+  background-repeat: repeat-y;
+  background-position: left 80px top;
 }
 
 html {
@@ -72,16 +75,6 @@ h1, h2, h3, h4, h5, h6 {
  * Center the page content.
  */
 
-.container:after {
-  content: "";
-  position: absolute;
-  background-image: url("/public/embrodiery.png");
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 5rem; /* TODO: fix this crap! */
-  width: 92px;
-}
 .container {
   max-width: 28rem;
 }
