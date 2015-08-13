@@ -1,0 +1,57 @@
+/* Adapted from: https://github.com/kleinfreund/kleinfreund.github.io */
+
+
+/**
+ * Post List
+ */
+.post-list {
+    list-style: none;
+    margin-left: 0;
+
+    > li {
+        border-bottom: 1px solid #703030;
+
+        .timestamp {
+            display: block;
+        }
+
+        &:first-child {
+            border-top: 1px solid #703030;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.post-list__link {
+    display: block;
+    padding: $half-spacing-unit;
+}
+
+.post-title {
+    @include font-size(20px);
+    margin-right: 0.5rem;
+}
+
+
+
+/**
+ * Post List (Archive)
+ */
+.post-list--archive {
+
+    .current-post {
+
+        .tag {
+            background-color: #703030;
+        }
+
+        &,
+        a,
+        .timestamp {
+            color: #703030;
+        }
+    }
+}

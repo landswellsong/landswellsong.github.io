@@ -2,37 +2,25 @@
  <!--TODO: add a "where" filter-->
 <!--  { % for post in ( paginator.posts | where:"lang", lang ) % }-->
 
-  <!--Ugly but works -->
-  {% for post in paginator.posts %}
-  {% if page.lang == post.lang %} 
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <!--Adapted from KleinFreund.github.io -->
+    {% assign posts = site.posts | where: "lang", page.lang %}
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <ul class="post-list  post-list--archive">
+    {% for post in posts %}
+        <li class="current-post">
+            <a class="post-list__link" href="{{ post.url }}">
+            
+            <!--TODO propagade upward-->
+            <time class="timestamp" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                {{ post.date | date: '%Y' }}
+            </time>
+    
+            <span class="post-title">{{ post.title }}</span>
 
-    {{ post.content }}
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
+           </a>
+        </li>
+    {% endfor %}
+    </ul>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">{{ site.t[page.lang].oldertxt }}</a>
-  {% else %}
-    <span class="pagination-item older">{{ site.t[page.lang].oldertxt }}</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">{{ site.t[page.lang].newertxt }}</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">{{ site.t[page.lang].newertxt }}</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">{{ site.t[page.lang].newertxt }}</span>
-  {% endif %}
+  </ul>
 </div>

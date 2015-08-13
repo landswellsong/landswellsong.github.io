@@ -15,8 +15,6 @@ t:
       description:      'Pretty nerdy stuff is being written here. Bioinformatics, computational politics and 
 mathematical journalism — no one will leave without confusion!'
       indexurl:         '/'
-      oldertxt:         '← Older'
-      newertxt:         'Newer →'
       githubtxt:        'This site on GitHub'
       themetxt:         'Jekyll theme'
       copylefttxt:      'All wrongs liberated.'
@@ -25,8 +23,6 @@ mathematical journalism — no one will leave without confusion!'
       description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний 
 журналізм — ніхто не лишиться незаплутаним!'
       indexurl:         '/uk'
-      oldertxt:         '← Старіші'
-      newertxt:         'Новіші →'
       githubtxt:        'Цей сайт на GitHub'
       themetxt:         'Тема для Jekyll'
       copylefttxt:      'Усі ліва звільнено.'
@@ -38,9 +34,6 @@ author:
   linkedin:       https://www.linkedin.com/pub/oleksiy-protas/34/863/454 
   vk:             https://vk.com/landswellsong
   github:         https://github.com/landswellsong
-
-paginate:         5
-paginate_path:    '/en/:num'
 
 # Custom vars
 version:          2.0.0
