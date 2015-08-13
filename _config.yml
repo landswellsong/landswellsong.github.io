@@ -18,6 +18,7 @@ mathematical journalism — no one will leave without confusion!'
       githubtxt:        'This site on GitHub'
       themetxt:         'Jekyll theme'
       copylefttxt:      'All wrongs liberated.'
+      licensetext:      'Since we still live in an imperfect world, the content of the blog is protected by '
     uk:
       tagline:          'блоґ Олексія Протаса'
       description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний 
@@ -26,6 +27,7 @@ mathematical journalism — no one will leave without confusion!'
       githubtxt:        'Цей сайт на GitHub'
       themetxt:         'Тема для Jekyll'
       copylefttxt:      'Усі ліва звільнено.'
+      licensetext:      'Оскільки ми досі живемо у недосконалому світі, матеріали цього блоґу захищено ліцензією '
 
 author:
   name:           'Oleksiy Protas'

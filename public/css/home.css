@@ -1,0 +1,13 @@
+div.ccplaque {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-left: 82px;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+
+span.ccplaque {
+    font-size: 12px;
+    display: block;
+}
