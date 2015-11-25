@@ -13,7 +13,7 @@ t:
     en:
       inverse:          'uk'
       tagline:          'blog by Oleksiy Protas'
-      description:      'Pretty nerdy stuff is being written here. Bioinformatics, computational politics and 
+      description:      'Pretty nerdy stuff is being written here. Bioinformatics, computational politics and
 mathematical journalism — no one will leave without confusion!'
       indexurl:         '/en'
       githubtxt:        'This site on GitHub'
@@ -21,10 +21,12 @@ mathematical journalism — no one will leave without confusion!'
       copylefttxt:      'All wrongs liberated.'
       licensetext:      'Since we still live in an imperfect world, the content of the blog is protected by '
       languagetoggle:   'Українська версія'
+      warning:          'WARNING:'
+      gawarning:        'This site uses Google Analytics'
     uk:
       inverse:          'en'
       tagline:          'бліґ Олексія Протаса'
-      description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний 
+      description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний
 журналізм — ніхто не лишиться незаплутаним!'
       indexurl:         '/'
       githubtxt:        'Цей сайт на GitHub'
@@ -32,12 +34,14 @@ mathematical journalism — no one will leave without confusion!'
       copylefttxt:      'Усі ліва звільнено.'
       licensetext:      'Оскільки ми досі живемо у недосконалому світі, матеріали цього блоґу захищено ліцензією '
       languagetoggle:   'English version'
+      warning:          'УВАГА:'
+      gawarning:        'Сайт використовує Google Analytics'
 
 author:
   name:           'Oleksiy Protas'
   facebook:       https://www.facebook.com/protas.oleksiy
   twitter:        https://twitter.com/Landswellsong
-  linkedin:       https://www.linkedin.com/pub/oleksiy-protas/34/863/454 
+  linkedin:       https://www.linkedin.com/pub/oleksiy-protas/34/863/454
   vk:             https://vk.com/landswellsong
   github:         https://github.com/landswellsong
 
@@ -71,5 +75,3 @@ defaults:
       path: 'en'
     values:
       lang: 'en'
-
-      
