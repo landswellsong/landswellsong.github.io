@@ -5,7 +5,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p><img src="/public/protas.png"/><br/>{{ site.t[page.lang].description }}</p> 
+    <p><img src="/public/protas.png"/><br/>{{ site.t[page.lang].description }}</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -26,11 +26,11 @@
     {% endfor %}
 
     <a class="sidebar-nav-item" href="{{ site.author.linkedin }}">LinkedIn</a>
-    <a class="sidebar-nav-item" href="{{ site.author.github }}">GitHub</a>
+    <a class="sidebar-nav-item" href="{{ site.author.pgpkey }}">PGP {{ site.t[page.lang].keytxt }}</a>
     <a class="sidebar-nav-item" href="{{ site.author.facebook }}">Facebook</a>
     <a class="sidebar-nav-item" href="{{ site.author.twitter }}">Twitter</a>
     <a class="sidebar-nav-item" href="{{ site.author.vk }}">VK</a>
-    
+    <a class="sidebar-nav-item" href="{{ site.author.github }}">GitHub</a>
     <a class="sidebar-nav-item" href="{{ site.github.repo }}">{{ site.t[page.lang].githubtxt }}</a>
     <a class="sidebar-nav-item" href="{{ site.github.theme }}">{{ site.t[page.lang].themetxt }}</a>
  <!--   <span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
