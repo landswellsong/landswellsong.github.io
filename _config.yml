@@ -4,7 +4,6 @@ highlighter:      pygments
 
 gems:
   - jekyll-mentions
-  - jekyll-feed
 
 # Permalinks
 permalink: /:title/
@@ -28,6 +27,7 @@ mathematical journalism — no one will leave without confusion!'
       languagetoggle:   'Українська версія'
       warning:          'WARNING:'
       gawarning:        'This site uses Google Analytics'
+      atomtitle:        'Стрічка новин в форматі ATOM'
     uk:
       inverse:          'en'
       tagline:          'бліґ Олексія Протаса'
@@ -42,6 +42,7 @@ mathematical journalism — no one will leave without confusion!'
       languagetoggle:   'English version'
       warning:          'УВАГА:'
       gawarning:        'Сайт використовує Google Analytics'
+      atomtitle:        'ATOM news feed'
 
 author:
   name:           'Oleksiy Protas'
