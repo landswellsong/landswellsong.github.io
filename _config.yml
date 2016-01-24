@@ -2,6 +2,10 @@
 markdown:         redcarpet
 highlighter:      pygments
 
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+
 # Permalinks
 permalink: /:title/
 excerpt_separator: ""
