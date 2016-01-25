@@ -28,6 +28,7 @@ mathematical journalism — no one will leave without confusion!'
       warning:          'WARNING:'
       gawarning:        'This site uses Google Analytics'
       atomtitle:        'Стрічка новин в форматі ATOM'
+      figurelabel:      'Рис'
     uk:
       inverse:          'en'
       tagline:          'бліґ Олексія Протаса'
@@ -43,6 +44,7 @@ mathematical journalism — no one will leave without confusion!'
       warning:          'УВАГА:'
       gawarning:        'Сайт використовує Google Analytics'
       atomtitle:        'ATOM news feed'
+      figurelabel:      'Fig'
 
 author:
   name:           'Oleksiy Protas'
