@@ -27,9 +27,9 @@ mathematical journalism — no one will leave without confusion!'
       languagetoggle:   'Українська версія'
       warning:          'WARNING:'
       gawarning:        'This site uses Google Analytics'
-      atomtitle:        'Стрічка новин в форматі ATOM'
-      figurelabel:      'Рис'
-    uk:
+      atomtitle:        'ATOM news feed'
+      figurelabel:      'Fig'
+   uk:
       inverse:          'en'
       tagline:          'бліґ Олексія Протаса'
       description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний
@@ -43,8 +43,8 @@ mathematical journalism — no one will leave without confusion!'
       languagetoggle:   'English version'
       warning:          'УВАГА:'
       gawarning:        'Сайт використовує Google Analytics'
-      atomtitle:        'ATOM news feed'
-      figurelabel:      'Fig'
+      atomtitle:        'Стрічка новин в форматі ATOM'
+      figurelabel:      'Рис'
 
 author:
   name:           'Oleksiy Protas'
