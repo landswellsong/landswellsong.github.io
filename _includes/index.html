@@ -9,12 +9,10 @@
     {% for post in posts %}
         <li class="post-list">
             <a class="post-list__link" href="{{ post.url }}">
-            
             {% include date.html %}
-    
             <span class="post-title">{{ post.title }}</span>
-
            </a>
+           <!-- <small>{{ post.abstract }}</small> -->
         </li>
     {% endfor %}
     </ul>
