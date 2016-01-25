@@ -8,6 +8,11 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <!-- Facebook-friendly preview text -->
+  {% if page.abstract %}
+  <meta name="description" content="{{ page.abstract }}"/>
+  {% endif %}
+
   <title>
     {% if page.title %}
       {{ page.title }} &middot; {{ site.title }}
