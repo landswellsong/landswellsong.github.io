@@ -1,6 +1,6 @@
 <!-- Quite a retarded way to increment a var, but working -->
 {% capture figureCounter %}{{ figureCounter | plus:1 }}{% endcapture %}
 <figure>
-  <a href="{{ include.url }}" target="__blank"><img width=90% src="{{ include.url }}" alt="{{ include.caption }}"/></a>
+  <a href="{{ include.url }}" target="__blank"><img width=60% src="{{ include.url }}" alt="{{ include.caption }}"/></a>
   <caption>{{ site.t[page.lang].figurelabel }}{{ figureCounter }}. – {{ include.caption }}</caption>
 </figure>
