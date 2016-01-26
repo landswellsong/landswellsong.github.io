@@ -1,3 +1,5 @@
+post lang = {{ post.lang }}
+page lang = {{ page.lang }}
 <time class="timestamp" datetime="{{ post.date | date: '%Y-%m-%d' }}">
     {% if post.lang == 'uk' %}
         {{ post.date | date: '%-d ' }}
