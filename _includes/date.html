@@ -1,5 +1,6 @@
+SL {{ post.lang }} GL {{ page.lang }}
 <time class="timestamp" datetime="{{ post.date | date: '%Y-%m-%d' }}">
-    {% if post.lang == 'uk' %}
+    {% if post.lang == 'uk' or page.lang == 'uk' %}
         {{ post.date | date: '%-d ' }}
         {% assign month = post.date | date: '%-m' %}
         {% case month %}
