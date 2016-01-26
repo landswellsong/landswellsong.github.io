@@ -1,24 +1,3 @@
-SL {{ post.lang }} GL {{ page.lang }}
 <time class="timestamp" datetime="{{ post.date | date: '%Y-%m-%d' }}">
-    {% if post.lang == 'uk' or page.lang == 'uk' %}
-        {{ post.date | date: '%-d ' }}
-        {% assign month = post.date | date: '%-m' %}
-        {% case month %}
-            {% when '1' %}січня
-            {% when '2' %}лютого
-            {% when '3' %}березня
-            {% when '4' %}квітня
-            {% when '5' %}травня
-            {% when '6' %}червня
-            {% when '7' %}липня
-            {% when '8' %}серпня
-            {% when '9' %}вересня
-            {% when '10' %}жовтня
-            {% when '11' %}листопада
-            {% when '12' %}грудня
-        {% endcase %}
-    {% else %}
-        {{ post.date | date: '%-d %B, ' }}
-    {% endif %}
-    {{ post.date | date: '%Y' }}
+    {% include rawdate.html date=post.date %}
 </time>

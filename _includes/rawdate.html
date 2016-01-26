@@ -1,0 +1,21 @@
+{% if post.lang == 'uk' or page.lang == 'uk' %}
+    {{ include.date | date: '%-d ' }}
+    {% assign month = include.date | date: '%-m' %}
+    {% case month %}
+        {% when '1' %}січня
+        {% when '2' %}лютого
+        {% when '3' %}березня
+        {% when '4' %}квітня
+        {% when '5' %}травня
+        {% when '6' %}червня
+        {% when '7' %}липня
+        {% when '8' %}серпня
+        {% when '9' %}вересня
+        {% when '10' %}жовтня
+        {% when '11' %}листопада
+        {% when '12' %}грудня
+    {% endcase %}
+{% else %}
+    {{ include.date | date: '%-d %B, ' }}
+{% endif %}
+{{ include.date | date: '%Y' }}
