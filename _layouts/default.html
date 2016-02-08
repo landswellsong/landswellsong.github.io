@@ -37,8 +37,8 @@
                <!--TODO support tags for indexes -->
                <a class="language-toggle" href="
                {% assign invlang=site.t[page.lang].inverse %}
-               {% if page.type == "post" %}
-               {% assign posts=site.posts | where:"name", page.name | where:"lang", invlang | first %}
+               {% if page.layout == "post" %}
+               {% assign posts=site.posts | where:"id", page.id | where:"lang", invlang | first %}
                {{ posts.url }}
                {% else %}
                {{ site.t[invlang].indexurl }}

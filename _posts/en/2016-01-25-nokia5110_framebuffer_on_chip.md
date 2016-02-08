@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Nokia 5110 display on CHIP
 id: nokia5110spichip
+lang: en
 abstract: For one of my projects I needed a small inexpensive display connected to CHIP, so I'm trying to connect the Nokia 5110 display via SPI bus as a framebuffer device and use it to display bitmaps and run ncurses console software.
 ---
 

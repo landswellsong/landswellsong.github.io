@@ -1,4 +1,6 @@
 # Dependencies
+# TODO: GitHub is moving to kramdown/rouge, update it, also check sylvain's typography hack
+# Source: https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
 markdown:         redcarpet
 highlighter:      pygments
 
@@ -64,24 +66,22 @@ github:
 
 
 # Multiple languages (thanks to https://sylvain.durand.tf/making-jekyll-multilingual/)
+# TODO: this requires update for Jekyll 3
+# Also: https://github.com/sylvaindurand/sylvaindurand.org/issues/4
 defaults:
   -
+    scope:
+      path: ''
+      type: posts
     values:
-      layout: 'default'
-      lang: 'uk'
-      type: 'index'
+      layout: post
   -
     scope:
-      path: '_posts'
+      path: ''
     values:
-      type: 'post'
+      lang: uk
   -
     scope:
-      path: '_posts/en'
+      path: en
     values:
-      lang: 'en'
-  -
-    scope:
-      path: 'en'
-    values:
-      lang: 'en'
+      lang: en
