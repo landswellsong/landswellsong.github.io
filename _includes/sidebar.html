@@ -5,7 +5,13 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p><img src="/public/protas.png"/><br/>{{ site.t[page.lang].description }}</p>
+    <!-- TODO: make this CSS not JS -->
+    <p>
+      <a href="tox:DF4968D65B039188A1F5C7C50102ECEBB0C3F81593F5DE87CE2BAF09D0280C5BDEF8AFEA3F2A">
+        <img src="/public/protas.png" onmouseover="this.src='/public/toxid.png';" onmouseout="this.src='/public/protas.png';"/>
+      </a>
+      <br/>{{ site.t[page.lang].description }}
+    </p>
   </div>
 
   <nav class="sidebar-nav">
