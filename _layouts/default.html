@@ -38,13 +38,11 @@
                <a class="language-toggle" href="
                {% assign invlang=site.t[page.lang].inverse %}
                {% if page.layout == "post" %}
-               {% assign posts=site.posts | where:"id", page.id | where:"lang", invlang | first %}
-               {{ posts.url }}
-               {% else %}
+               {% assign posts=site.posts | where:"name", page.name | where:"lang", invlang | first %}
+               {{ posts.url }}{% else %}
                {{ site.t[invlang].indexurl }}
                {% endif %}">
-               {{ site.t[page.lang].languagetoggle }}
-               </a>
+               {{ site.t[page.lang].languagetoggle }}</a>
             </span>
           </label>
         </div>
