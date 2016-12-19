@@ -1,0 +1,46 @@
+.tocpanel{
+  position: fixed;
+  left: 0px;
+  top: 30%;
+  width: 200px;
+}
+
+.toctopics
+{
+  display: inline-block;
+  list-style-type: none;
+  margin-left: -240px;
+  text-align: right;
+
+  -webkit-transition: -webkit-transform 0.3s linear;
+  -webkit-transform: translateX(0%);
+
+  -moz-transition: -moz-transform 0.3s linear;
+  -moz-transform: translateX(0%);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.toctopics:hover
+{
+  -webkit-transform: translateX(240px);
+}
+
+.toctopics:hover > li:after
+{
+  color: rgba(3,2,1,0);
+}
+
+.toctopics li
+{
+  font-size: 16px;
+}
+
+.toctopics li::after
+{
+  content: '—\00a0';
+  margin: 0px 10px;
+  font-weight: bold;
+  font-size: 20pt;
+}
