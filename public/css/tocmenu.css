@@ -11,6 +11,7 @@
   list-style-type: none;
   margin-left: -240px;
   text-align: right;
+  min-width: 290px;
 
   -webkit-transition: -webkit-transform 0.3s linear;
   -webkit-transform: translateX(0%);
