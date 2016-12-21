@@ -77,6 +77,16 @@ defaults:
       layout: post
   -
     scope:
+      path: '_posts/en'
+    values:
+      lang: en
+  -
+    scope:
+      path: '_posts/uk'
+    values:
+      lang: uk
+  -
+    scope:
       path: ''
     values:
       lang: uk
