@@ -35,14 +35,9 @@
                <img src="/public/{{ page.lang }}/favicon.ico" align="left" style="margin-right: 5px"/>
                <!--TODO: probably support more than 1 translation. or not?-->
                <!--TODO support tags for indexes -->
-               <a class="language-toggle" href="
-               {% assign invlang=site.t[page.lang].inverse %}
-               {% if page.layout == "post" %}
-               {% assign posts=site.posts | where:"slug", page.slug | where:"lang", invlang | first %}
-               {{ posts.url }}{% else %}
-               {{ site.t[invlang].indexurl }}
-               {% endif %}">
-               {{ site.t[page.lang].languagetoggle }}</a>
+               <a class="language-toggle" href="{% assign invlang=site.t[page.lang].inverse %}{% if page.layout == "post" %}/{{ invlang }}/{{ page.slug }}/{% else %}{{ site.t[invlang].indexurl }}{% endif %}">
+                 {{ site.t[page.lang].languagetoggle }}
+               </a>
             </span>
           </label>
         </div>
