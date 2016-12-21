@@ -21,7 +21,7 @@ varieties and the connecting guides you might find on the Internet might deviate
 actual device. In my setup I connected `VCC` to 3.3V power (+) and `GND` with `LIGHT` to
 3.3V ground (-). Some devices apparently require you to connect `LIGHT` to (+) instead.
 
-{% include figure.html url="/res/2016-01-25-nokia5110spichip/IMG_20160125_121724.jpg" caption="Display connected and powered up" %}
+{% include figure.html url="IMG_20160125_121724.jpg" caption="Display connected and powered up" %}
 
 ## Connecting CHIP
 CHIP is normally powered from μUSB cable providing at least 500 mAh of current. I have seen
@@ -48,7 +48,7 @@ pins 13-14 respectively). Note the numbers, we'll need them later on.
 [chipschema]: https://github.com/NextThingCo/CHIP-Hardware/blob/master/ALPHA-CHIP%5Bv0_21%5D/CHIP_ALPHA_V_021.pdf
 [spi2forum]: https://bbs.nextthing.co/t/spi-master-support/1118/5
 
-{% include figure.html url="/res/2016-01-25-nokia5110spichip/IMG_20160125_142912.jpg" caption="Final wiring with CHIP" %}
+{% include figure.html url="IMG_20160125_142912.jpg" caption="Final wiring with CHIP" %}
 
 # Software setup
 Now that we have the wires in place we need to configure Linux to enable SPI and to use our display as
