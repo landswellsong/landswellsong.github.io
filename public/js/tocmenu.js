@@ -12,7 +12,7 @@ toclist.setAttribute("class", "toctopics");
 tocmenu.appendChild(toclist);
 
 
-document.getElementsByTagName("h2").forEach(function(elt){
+document.getElementsByTagName("h1").forEach(function(elt){
   var anchor = document.createElement("a");
   anchor.setAttribute("name", i);
   elt.parentNode.insertBefore(anchor, elt);
