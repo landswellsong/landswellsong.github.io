@@ -2,6 +2,6 @@
 <!-- TODO: verify that it works  -->
 {% capture figureCounter %}{{ figureCounter | plus:1 }}{% endcapture %}
 <figure>
-  <a href="/res/{{ page.name }}/{{ include.url }}" target="__blank"><img width=60% src="/res/{{ page.name }}/th_600_{{ include.url }}" srcset="{% for i in (1..4) %}{% assign sz = i | times:200 %}/res/{{ page.name }}/th_{{ sz }}_{{ include.url }} {{ sz }}w, {% endfor %}" alt="{{ include.caption }}"/></a>
+  <a href="/res/{{ page.slug }}/{{ include.url }}" target="__blank"><img width=60% src="/res/{{ page.slug }}/th_600_{{ include.url }}" srcset="{% for i in (1..4) %}{% assign sz = i | times:200 %}/res/{{ page.slug }}/th_{{ sz }}_{{ include.url }} {{ sz }}w, {% endfor %}" alt="{{ include.caption }}"/></a>
   <caption>{{ site.t[page.lang].figurelabel }}{{ figureCounter }}. – {{ include.caption }}</caption>
 </figure>

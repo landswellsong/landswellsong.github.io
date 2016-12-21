@@ -8,7 +8,7 @@ gems:
   - jekyll-mentions
 
 # Permalinks
-permalink: /:title/
+permalink: /:categories/:title/
 excerpt_separator: ""
 
 # Setup
@@ -80,11 +80,13 @@ defaults:
       path: '_posts/en'
     values:
       lang: en
+      category: en
   -
     scope:
       path: '_posts/uk'
     values:
       lang: uk
+      category: uk
   -
     scope:
       path: ''
