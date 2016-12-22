@@ -2,6 +2,9 @@
 title: 'Driving to Europe: tips & tricks'
 abstract: Ukraine is soon expected to have a visa-free travel agreement with the Schengen countries. This year I mostly did nothing, but drive all over Europe, basically living in my Kangoo at times. Throughout the trips I collected a few tips and tricks that were not so obvious for me given Ukrainian driving perspective. I don't pretend to offer exhaustive insight and welcome pull requests with corrections and extras. Hopefully somebody will find it useful. All illustrations are pictures I took myself in 2016.
 ---
+* TOC
+{:toc}
+
 ## Border
 
 There are 2 types of control from each of the counties at the border: a passport and a customs one. The passport control checks you and your passengers, but they may ask you to open the doors and the boot of the car to make sure there are no extra people onboard. The customs can ask you to show the contents of a bag of their liking so pack everything in the way that is easy to reach. The European Union countries have a ban on import of animal-borne food products (meat, cheese, dairy, though even milk chocolate in theory as well) coming from extra-union manufacturing and you may be asked to destroy them. The countries of Schengen agreement lack the mandatory passport control. The countries of European Customs Union lack the customs control. Therefore on Swiss-French border you will be only subject to the customs control and on Slovene-Croatian one only to the passport one. The lanes in the border control posts are divided to [green and red channels](http://www.toll.no/en/shopping-abroad/red-or-green-channel/). Sometimes there is a separate lane for the holders of specific passports or one dedicated to local border traffic. You don't want to stand in the latter one because it's very slow.
