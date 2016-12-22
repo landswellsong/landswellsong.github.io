@@ -1,7 +1,7 @@
 # Dependencies
 # TODO: GitHub is moving to kramdown/rouge, update it, also check sylvain's typography hack
 # Source: https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 gems:
