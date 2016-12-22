@@ -83,7 +83,19 @@ defaults:
       category: en
   -
     scope:
+      path: '_drafts/en'
+    values:
+      lang: en
+      category: en
+  -
+    scope:
       path: '_posts/uk'
+    values:
+      lang: uk
+      category: uk
+  -
+    scope:
+      path: '_drafts/uk'
     values:
       lang: uk
       category: uk
