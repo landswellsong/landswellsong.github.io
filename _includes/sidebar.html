@@ -7,9 +7,7 @@
   <div class="sidebar-item">
     <!-- TODO: make this CSS not JS -->
     <p>
-      <a href="tox:DF4968D65B039188A1F5C7C50102ECEBB0C3F81593F5DE87CE2BAF09D0280C5BDEF8AFEA3F2A">
-        <img src="/public/protas.png" onmouseover="this.src='/public/toxid.png';" onmouseout="this.src='/public/protas.png';"/>
-      </a>
+      <img src="/public/protas.png"/>
       <br/>{{ site.t[page.lang].description }}
     </p>
   </div>
@@ -32,10 +30,9 @@
     {% endfor %}
 
     <a class="sidebar-nav-item" href="{{ site.author.linkedin }}">LinkedIn</a>
-    <a class="sidebar-nav-item" href="{{ site.author.pgpkey }}">PGP {{ site.t[page.lang].keytxt }}</a>
+    <!-- <a class="sidebar-nav-item" href="{{ site.author.pgpkey }}">PGP {{ site.t[page.lang].keytxt }}</a> TODO: updat the keys etc-->
     <a class="sidebar-nav-item" href="{{ site.author.facebook }}">Facebook</a>
     <a class="sidebar-nav-item" href="{{ site.author.twitter }}">Twitter</a>
-    <a class="sidebar-nav-item" href="{{ site.author.vk }}">VK</a>
     <a class="sidebar-nav-item" href="{{ site.author.github }}">GitHub</a>
     <a class="sidebar-nav-item" href="{{ site.github.repo }}">{{ site.t[page.lang].githubtxt }}</a>
     <a class="sidebar-nav-item" href="{{ site.github.theme }}">{{ site.t[page.lang].themetxt }}</a>
