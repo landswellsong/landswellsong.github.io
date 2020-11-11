@@ -101,11 +101,17 @@ defaults:
       category: uk
   -
     scope:
-      path: ''
-    values:
-      lang: uk
-  -
-    scope:
       path: en
     values:
       lang: en
+  -
+    scope:
+      path: uk
+    values:
+      lang: uk
+  # Default language
+  -
+    scope:
+      path: ''
+    values:
+      lang: uk
