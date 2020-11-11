@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #713131;
+  color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -107,7 +107,7 @@ p {
 }
 
 strong {
-  color: #703030;
+  color: #303030;
 }
 
 
@@ -119,7 +119,6 @@ ul, ol, dl {
 
 dt {
   font-weight: bold;
-  color: #703030;
 }
 dd {
   margin-bottom: .5rem;
@@ -148,7 +147,7 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: "Ubuntu Mono", Menlo, Monaco, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
@@ -219,9 +218,6 @@ th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
 }
-th {
-  color: #703030;
-}
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
@@ -263,9 +259,9 @@ tbody tr:nth-child(odd) th {
 
 .container {
   max-width: 38rem;
-  padding-left:  150px;
+  padding-left:  1rem;
   padding-right: 1rem;
-  margin-left:  90px;
+  margin-left:  auto;
   margin-right: auto;
 }
 
@@ -284,10 +280,10 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #805050;
+  color: #505050;
 }
 .masthead-title a {
-  color: #805050;
+  color: #505050;
 }
 .masthead-title small {
   font-size: 75%;
@@ -313,7 +309,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #703030;
+  color: #303030;
 }
 .page-title,
 .post-title {
@@ -403,25 +399,4 @@ a.pagination-item:hover {
     border-top-right-radius:    4px;
     border-bottom-right-radius: 4px;
   }
-}
-
-a.language-toggle {
-    color: #805050;
-}
-
-.sidebar-toggle {
-  color: #805050;
-}
-
-.sidebar-toggle:active,
-#sidebar-checkbox:checked ~ .wrap .sidebar-toggle {
-  background-color: #805050;
-}
-
-.sidebar {
-  background-color: #352020;
-}
-
-body {
-  background-image: url("/public/uk/embrodiery.png");
 }

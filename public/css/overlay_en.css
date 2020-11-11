@@ -1,0 +1,64 @@
+/* Theme colors */
+a {
+    color: #d28b26;
+}
+
+a.language-toggle {
+    color: #805050;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #313171;
+}
+
+strong {
+    color: #303070;
+}
+
+dt {
+    color: #303070;
+}
+
+th {
+    color: #303070;
+}
+
+code {
+    color: #6a61bf;
+}
+
+.masthead-title {
+    color: #505080;
+}
+
+.masthead-title a {
+    color: #505080;
+}
+
+.page-title, .post-title, .post-title a {
+    color: #303730;
+}
+
+.sidebar {
+    background-color: #202035;
+}
+
+.sidebar-toggle {
+    color: #505080;
+}
+
+.sidebar-toggle:active {
+    background-color: #505080;
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .wrap .sidebar-toggle {
+  background-color: #505080;
+}
+
+/* Embrodiery TODO: should we use rem here or px? Find a good setpoint */
+@media (min-width: 56rem) { 
+    body {
+        background-image: url("/public/en/embrodiery.png");
+    }
+}

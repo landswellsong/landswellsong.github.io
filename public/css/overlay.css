@@ -1,0 +1,47 @@
+/* Ubuntu font with heavier headings */
+html {
+    font-family: "Ubuntu", Georgia, "Times New Roman", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.pagination {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+.sidebar {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+pre {
+    font-family: "Ubuntu Mono", Menlo, Monaco, "Courier New", monospace;
+}
+
+/* Smaller masthead margin */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+/* Repetive embrodiery strip TODO: maybe don't use absolute values? */
+body {
+    background-repeat: repeat-y;
+    background-position: left 80px top;
+}
+
+/* Do not cap the content width on big displays TODO: reasonable values on tablets and mobiles? */
+@media (min-width: 56rem) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Allow embrodiery on larger screens TODO: px vs rem? */
+@media (min-width: 56rem) {
+    .container {
+        padding-left:  150px;
+        margin-left:  90px;
+    }
+}
