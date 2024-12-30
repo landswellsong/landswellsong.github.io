@@ -18,8 +18,7 @@ t:
     en:
       inverse:          'uk'
       tagline:          'blog by Oleksiy Protas'
-      description:      'Pretty nerdy stuff is being written here. Bioinformatics, computational politics and
-mathematical journalism — no one will leave without confusion!'
+      description:      'Footprints of a mad eight legged fox.'
       indexurl:         '/en'
       keytxt:           'key'
       githubtxt:        'This site on GitHub'
@@ -34,8 +33,7 @@ mathematical journalism — no one will leave without confusion!'
     uk:
       inverse:          'en'
       tagline:          'бліґ Олексія Протаса'
-      description:      'Тут пишуть про всілякі заумні гадості. Біоінформатика, обрахункова політика й математичний
-журналізм — ніхто не лишиться незаплутаним!'
+      description:      'Сліди навіженої восьмилапої лисиці.'
       indexurl:         '/'
       keytxt:           'ключ'
       githubtxt:        'Цей сайт на GitHub'
@@ -53,6 +51,7 @@ author:
   facebook:       https://www.facebook.com/protas.oleksiy
   twitter:        https://twitter.com/Landswellsong
   linkedin:       https://www.linkedin.com/pub/oleksiy-protas/34/863/454
+  instagram:      https://www.instagram.com/landswellsongs/
   github:         https://github.com/landswellsong
   pgpkey:         https://gist.githubusercontent.com/landswellsong/3051b162e887f96f9645/raw/a1da270331e9d7dbbe76a52d8d5e2f000338b83f/landswellsong_pub.gpg
 
