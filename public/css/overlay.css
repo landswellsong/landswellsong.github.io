@@ -45,3 +45,10 @@ body {
         margin-left:  90px;
     }
 }
+
+/* Smaller margins for images but also do right margins */
+img {
+  display: block;
+  margin: 0 0.5rem 0.5rem;
+  border-radius: 5px;
+}

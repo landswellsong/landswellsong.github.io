@@ -1,9 +1,29 @@
 <!-- Quite a retarded way to increment a var, but working -->
 <!-- TODO: verify that it works  -->
+<!-- TODO: add proper support for portrait photos, it's bad XDDD -->
+<!-- TODO: play with sizes -->
 {% capture figureCounter %}{{ figureCounter | plus:1 }}{% endcapture %}
 <figure>
-  <a href="/res/{{ page.slug }}/{{ include.url }}" target="__blank">
-    <img width="60%" src="/res/{{ page.slug }}/th_600_{{ include.url }}" srcset="{% for i in (1..4) %}{% assign sz = i | times:200 %}/res/{{ page.slug }}/th_{{ sz }}_{{ include.url }} {{ sz }}w, {% endfor %}" alt="{{ include.caption }}">
-  </a>
+  {% assign images = include.url | split:"," %}
+  {% assign j = 1 %}
+  {% for img in images %}
+    {% assign type = img | slice:0 %}
+    {% capture sizespec %}
+      {% if type != '_' %}
+        {% if images.size == 1 %}width="60%"{% else %}width="30%"{% endif %}
+      {% else %}
+        {% if images.size == 1 %}height="45%"{% else %}height="22.5%"{% endif %}
+      {% endif %}
+    {% endcapture %}
+    {% assign remainder = forloop.index + 1 | modulo: 2 %}
+    <a href="/res/{{ page.slug }}/{{ img }}" target="__blank">
+      <img {% if remainder == 1 and j != images.size %}align="left"{% endif %}
+      {{ sizespec }}
+      src="/res/{{ page.slug }}/th_{% if images.size == 1 %}600{% else %}300{% endif %}_{{ img }}"
+      srcset="{% for i in (1..8) %}{% assign sz = i | times:100 %}/res/{{ page.slug }}/th_{{ sz }}_{{ img }} {{ sz }}h, {% endfor %}"
+      alt="{{ include.caption }}">
+    </a>
+    {% capture j %}{{ j | plus:1 }}{% endcapture %}
+  {% endfor %}
   <caption>{{ site.t[page.lang].figurelabel }}{{ figureCounter }}. – {{ include.caption }}</caption>
 </figure>

@@ -1,11 +1,11 @@
 #!/bin/sh
 # TODO: currently only JPGs are processed
 for image in `find . -iname '*.jpg' | grep -v '/th_[0-9][0]'`; do
-  for size in 200 400 600 800; do
+  for size in 100 200 300 400 500 600 700 800; do
     # Check if no thumbnail exists yet
     thumbname=`dirname $image`/th_${size}_`basename $image`
     if [ ! -f $thumbname ]; then
-      convert -quality 50% -resize ${size}x${size} $image $thumbname
+      convert -quality 50% -resize x${size} $image $thumbname
       echo "Created: $thumbname"
       git add $thumbname
     fi
