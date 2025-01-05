@@ -53,3 +53,18 @@ img {
   border-radius: 5px;
   max-width: 65vw;
 }
+
+a[href="#spoiler"]:focus {
+    color: #515151;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+a[href="#spoiler"]:hover {
+    text-decoration: none;
+}
+
+a[href="#spoiler"] {
+    color: #aeaeae;
+    background-color: #aeaeae;
+}
