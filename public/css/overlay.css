@@ -56,7 +56,7 @@ img {
 
 a[href="#spoiler"]:focus {
     color: #515151;
-    background-color: #ffffff;
+    background-color: #e0e0e0;
     text-decoration: none;
 }
 
