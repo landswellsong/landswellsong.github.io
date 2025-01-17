@@ -60,6 +60,14 @@ a[href="#spoiler"]:focus {
     text-decoration: none;
 }
 
+/* FIXME: override for iOS devices to show on hover */
+@supports (-webkit-touch-callout: none) {
+    a[href="#spoiler"]:hover {
+        color: #515151;
+        background-color: #e0e0e0;
+    }
+}
+
 a[href="#spoiler"]:hover {
     text-decoration: none;
 }
