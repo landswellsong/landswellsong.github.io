@@ -13,7 +13,7 @@
       height = "25%"
       src="/res/{{ page.slug }}/th_{% if images.size == 1 %}600{% else %}300{% endif %}_{{ img }}"
       srcset="{% for i in (1..8) %}{% assign sz = i | times:100 %}/res/{{ page.slug }}/th_{{ sz }}_{{ img }} {{ sz }}h, {% endfor %}"
-      alt="{{ include.caption }}">
+      alt="{{ include.caption }}" class="figure">
     </a>
     {% capture j %}{{ j | plus:1 }}{% endcapture %}
   {% endfor %}

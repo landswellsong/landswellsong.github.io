@@ -47,11 +47,14 @@ body {
 }
 
 /* Smaller margins for images but also do right margins */
-img {
+img.figure {
   display: block;
   margin: 0 0.5rem 0.5rem;
   border-radius: 5px;
   max-width: 65vw;
+  @supports (-webkit-touch-callout: none) {
+    max-height: 25vw;
+  }
 }
 
 a[href="#spoiler"]:focus {
