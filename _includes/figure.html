@@ -11,8 +11,12 @@
     <a href="/res/{{ page.slug }}/{{ img }}" target="__blank">
       <img {% if remainder == 1 and j != images.size %}align="left"{% endif %}
       height = "25%"
+      {% if img contains ".svg" %}
+      src="/res/{{ page.slug }}/{{ img }}"
+      {% else %}
       src="/res/{{ page.slug }}/th_{% if images.size == 1 %}600{% else %}300{% endif %}_{{ img }}"
       srcset="{% for i in (1..8) %}{% assign sz = i | times:100 %}/res/{{ page.slug }}/th_{{ sz }}_{{ img }} {{ sz }}h, {% endfor %}"
+      {% endif %}
       alt="{{ include.caption }}" class="figure">
     </a>
     {% capture j %}{{ j | plus:1 }}{% endcapture %}
